@@ -109,6 +109,12 @@
       "type": "boolean",
       "default": false
     },
+    "dev_addr": {
+      "title": "Development IP Address",
+      "markdownDescription": "https://www.mkdocs.org/user-guide/configuration/#dev_addr",
+      "type": "string",
+      "default": "127.0.0.1:8000"
+    },
     "remote_branch": {
       "title": "Remote branch to deploy to",
       "markdownDescription": "https://www.mkdocs.org/user-guide/configuration/#remote_branch",
@@ -137,19 +143,5 @@
       "$ref": "schema/nav.json"
     }
   },
-  "additionalProperties": false,
-  "defaultSnippets": [
-    {
-      "label": "site_author",
-      "body": "${1:Jane Doe}"
-    },
-    {
-      "label": "repo_url",
-      "body": "repo_url: https://github.com/${1:user}/${2:repo}"
-    },
-    {
-      "label": "copyright",
-      "body": "copyright: Copyright &copy; 2022 ${1:Jane Doe}"
-    }
-  ]
+  "additionalProperties": false
 }
